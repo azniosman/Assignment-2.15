@@ -33,3 +33,9 @@ Below is an example IAM policy that allows an EC2 instance to retrieve a specifi
     }
   ]
 }
+
+The ARN for the secret prod/cart-service/credentials would follow this format:
+arn:aws:secretsmanager:<region>:<account-id>:secret:prod/cart-service/credentials-*
+
+Example for us-east-1 and account ID 123456789012:
+arn:aws:secretsmanager:us-east-1:123456789012:secret:prod/cart-service/credentials-*
